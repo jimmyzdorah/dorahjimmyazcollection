@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Designer Shop | Dorah Jimmyz Collection</title>
+
+  
+  <!-- HOMEPAGE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- NAVIGATION ICONS -->
+  <script
+    src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"
+    defer
+  ></script>
+
+  <!-- DESIGNER SHOP STYLES -->
+  <link rel="stylesheet" href="designer-shop.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SHOPPING SYSTEM -->
+  <script src="shop-products.js" defer></script>
+
+  <script src="designer-shop.js" defer></script>
+
+</head>
+
+<body id="top">
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================
+     HOMEPAGE ANNOUNCEMENT BAR
+========================================= -->
+
+<div class="announcement">
+  <span>✿ Fashion for Every Occasion</span>
+  <span>Elegance • Beauty • Creativity</span>
+  <span>✿ Shop • Hire • Celebrate</span>
+</div>
+
+<!-- =========================================
+     HOMEPAGE NAVIGATION
+========================================= -->
+
+<header class="site-header" id="header">
+
+  <nav class="navbar container" aria-label="Main navigation">
+
+    <!-- BRAND LOGO -->
+    <a
+      href="index.html"
+      class="brand"
+      aria-label="Dorah Jimmyz Collection home"
+    >
+      <span class="brand-frame">
+        <img
+          src="images/logo.png"
+          alt="Dorah Jimmyz Collection logo"
+        >
+      </span>
+    </a>
+
+    <!-- NAVIGATION LINKS -->
+    <div class="nav-links" id="navLinks">
+
+      <a href="index.html" class="nav-item">
+        <span class="nav-icon">
+          <i data-lucide="house"></i>
+        </span>
+        <span>Home</span>
+      </a>
+
+      <a
+        href="designer-shop.html"
+        class="nav-item active"
+        aria-current="page"
+      >
+        <span class="nav-icon">
+          <i data-lucide="shopping-bag"></i>
+        </span>
+        <span>Designer Shop</span>
+      </a>
+
+      <a href="makeup-studio.html" class="nav-item">
+        <span class="nav-icon">
+          <i data-lucide="paintbrush"></i>
+        </span>
+        <span>Makeup Studio</span>
+      </a>
+
+      <a href="photo-studio.html" class="nav-item">
+        <span class="nav-icon">
+          <i data-lucide="camera"></i>
+        </span>
+        <span>Photo Studio</span>
+      </a>
+
+      <a href="nails-bar.html" class="nav-item">
+        <span class="nav-icon">
+          <i data-lucide="sparkles"></i>
+        </span>
+        <span>Nails Bar</span>
+      </a>
+
+      <a href="contact.html" class="nav-item">
+        <span class="nav-icon">
+          <i data-lucide="mail"></i>
+        </span>
+        <span>Contact</span>
+      </a>
+
+      <!-- MOBILE BOOKING LINK -->
+      <a href="contact.html" class="mobile-book">
+        <span>✿</span>
+        Book With Us
+        <span>✿</span>
+      </a>
+
+    </div>
+
+    <!-- SHOPPING ACTIONS -->
+    <div class="shop-header-actions">
+
+      <!-- FAVOURITES -->
+      <button
+        type="button"
+        id="favouritesButton"
+        class="shop-action-button"
+        aria-label="View favourite products"
+        title="Favourites"
+      >
+        <i data-lucide="heart"></i>
+        <span id="favouritesCount" class="shop-action-count">0</span>
+      </button>
+
+      <!-- SHOPPING CART -->
+      <button
+        type="button"
+        id="cartButton"
+        class="shop-action-button"
+        aria-label="Open shopping bag"
+        title="Shopping bag"
+      >
+        <i data-lucide="shopping-bag"></i>
+        <span id="cartCount" class="shop-action-count">0</span>
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="navLinks"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="shop-hero">
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=85" alt="Fashion collection">
+      </div>
+      <div class="hero-shade"></div>
+
+      <div class="container hero-content">
+        <span class="eyebrow light">/ DORAH JIMMYZ DESIGNER BOUTIQUE /</span>
+        <h1>Wear It.<br><span>Love It.</span><br>Make It Yours.</h1>
+        <p>Statement fashion, beautiful accessories and unforgettable occasion pieces. Discover your style, whether you want to buy or hire.</p>
+
+        <div class="hero-buttons">
+          <a href="#shop" class="luxury-button light-button" data-shop-mode="buy">SHOP TO BUY <span>✿</span></a>
+          <a href="#shop" class="luxury-button cream-button" data-shop-mode="hire">EXPLORE HIRE <span>✿</span></a>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>WOMEN / MEN / CHILDREN</span>
+        <a href="#departments">EXPLORE COLLECTIONS ↓</a>
+      </div>
+    </section>
+
+    <!-- BRAND PROMISE -->
+    <section class="promise-strip">
+      <div class="container promise-grid">
+        <span>✿ Curated Fashion</span>
+        <span>✿ Buy or Hire</span>
+        <span>✿ Style for Every Age</span>
+        <span>✿ Personal Assistance</span>
+      </div>
+    </section>
+
+    <!-- DEPARTMENTS -->
+    <section class="departments section" id="departments">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">/ EXPLORE THE COLLECTIONS /</span>
+            <h2>Style for Everyone.</h2>
+          </div>
+          <p>Beautifully selected clothing, footwear and accessories for every generation.</p>
+        </div>
+
+        <div class="department-grid">
+          <a href="#shop" class="department-card" data-department="Women">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Women's fashion">
+            <div class="department-copy">
+              <span>01 / THE WOMEN'S EDIT</span>
+              <h3>Women</h3>
+              <p>EXPLORE COLLECTION ✿</p>
+            </div>
+          </a>
+
+          <a href="#shop" class="department-card" data-department="Men">
+            <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=900&q=85" alt="Men's fashion">
+            <div class="department-copy">
+              <span>02 / THE MEN'S EDIT</span>
+              <h3>Men</h3>
+              <p>EXPLORE COLLECTION ✿</p>
+            </div>
+          </a>
+
+          <a href="#shop" class="department-card" data-department="Children">
+            <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=900&q=85" alt="Children's fashion">
+            <div class="department-copy">
+              <span>03 / LITTLE STYLE ICONS</span>
+              <h3>Children</h3>
+              <p>EXPLORE COLLECTION ✿</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUY OR HIRE -->
+    <section class="shopping-modes">
+      <div class="container modes-layout">
+        <div>
+          <span class="eyebrow light">/ TWO WAYS TO EXPERIENCE STYLE /</span>
+          <h2>Own the Look.<br>Or Hire the Moment.</h2>
+        </div>
+        <div>
+          <p>Purchase pieces you'll treasure or hire something extraordinary for your next occasion.</p>
+          <div class="mode-switch" role="group" aria-label="Shopping mode">
+            <button class="mode-button active" data-mode="buy" aria-pressed="true">BUY COLLECTION</button>
+            <button class="mode-button" data-mode="hire" aria-pressed="false">HIRE COLLECTION</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATALOGUE -->
+    <section class="shop-section section" id="shop">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">/ THE CURATED COLLECTION /</span>
+            <h2 id="shopTitle">Shop the Collection.</h2>
+          </div>
+          <p id="shopDescription">Find your next favourite piece.</p>
+        </div>
+
+        <div class="shop-layout">
+
+          <!-- FILTERS -->
+          <aside class="shop-filters">
+            <div class="filter-heading">
+              <h3>Refine Your Edit</h3>
+              <button id="resetFilters" class="text-button">CLEAR ALL</button>
+            </div>
+
+            <label for="searchInput">SEARCH PRODUCTS</label>
+            <input type="search" id="searchInput" placeholder="Search fashion...">
+
+            <label for="departmentFilter">DEPARTMENT</label>
+            <select id="departmentFilter">
+              <option value="all">All departments</option>
+              <option value="Women">Women</option>
+              <option value="Men">Men</option>
+              <option value="Children">Children</option>
+            </select>
+
+            <label for="categoryFilter">CATEGORY</label>
+            <select id="categoryFilter">
+              <option value="all">All categories</option>
+              <option value="Clothing">Clothing</option>
+              <option value="Shoes">Shoes</option>
+              <option value="Jewellery">Jewellery</option>
+            </select>
+
+            <label for="sizeFilter">SIZE</label>
+            <select id="sizeFilter">
+              <option value="all">All sizes</option>
+              <option>XS</option><option>S</option><option>M</option>
+              <option>L</option><option>XL</option><option>XXL</option>
+              <option>One Size</option>
+              <option>28</option><option>30</option><option>32</option>
+              <option>34</option><option>36</option><option>38</option>
+              <option>40</option><option>42</option><option>44</option>
+            </select>
+
+            <label for="priceFilter">MAXIMUM PRICE (UGX)</label>
+            <input type="number" id="priceFilter" min="0" placeholder="Any price">
+
+            <label class="checkbox-label">
+              <input type="checkbox" id="stockFilter"> Available only
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" id="favouritesFilter"> Favourites only
+            </label>
+          </aside>
+
+          <!-- PRODUCTS -->
+          <div class="products-area">
+            <div class="products-toolbar">
+              <span id="productCount">Loading products...</span>
+              <div>
+                <label for="sortFilter">SORT BY</label>
+                <select id="sortFilter">
+                  <option value="featured">Featured</option>
+                  <option value="newest">Newest</option>
+                  <option value="low">Price: Low to High</option>
+                  <option value="high">Price: High to Low</option>
+                  <option value="name">Name A–Z</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+
+            <div class="empty-state" id="emptyState" hidden>
+              <h3>No pieces found.</h3>
+              <p>Try adjusting your filters or switching collections.</p>
+              <button class="luxury-button dark-button" id="emptyReset">RESET FILTERS <span>✿</span></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HIRE GUIDE -->
+    <section class="hire-guide section" id="hire-guide">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">/ THE OCCASION WARDROBE /</span>
+            <h2>How Hiring Works.</h2>
+          </div>
+          <p>Extraordinary style for special occasions, without having to own every look.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article>
+            <span>01</span>
+            <h3>Choose Your Piece</h3>
+            <p>Explore the hire collection, choose your size and select the dates you need the item.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Request Availability</h3>
+            <p>Add your selection to the shopping bag and submit your hire enquiry.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Confirm &amp; Enjoy</h3>
+            <p>Our team confirms availability, deposit, fitting, collection and return arrangements.</p>
+          </article>
+        </div>
+
+        <p class="small-note">Hire bookings are not confirmed until our team approves them. Deposits, cleaning charges, late fees and return conditions will be discussed before payment.</p>
+      </div>
+    </section>
+
+    <!-- ASSISTANCE -->
+    <section class="style-assistance">
+      <div class="container assistance-layout">
+        <div>
+          <span class="eyebrow light">/ PERSONALLY CURATED STYLE /</span>
+          <h2>Need Help Finding Your Look?</h2>
+          <p>Ask about sizes, styling, product availability or hire arrangements.</p>
+        </div>
+        <a href="#shop" class="luxury-button light-button">EXPLORE THE SHOP <span>✿</span></a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <span class="eyebrow">/ GOOD TO KNOW /</span>
+        <h2>Frequently Asked Questions.</h2>
+
+        <div class="faq-list">
+          <details>
+            <summary>Can I buy and hire in the same order?</summary>
+            <p>Yes. Your bag can contain both purchase and hire items. Hire availability must be confirmed separately.</p>
+          </details>
+          <details>
+            <summary>How do I choose my size?</summary>
+            <p>Each product shows its available sizes. Contact us if you need sizing assistance.</p>
+          </details>
+          <details>
+            <summary>How are hire prices calculated?</summary>
+            <p>Hire estimates use the daily rate multiplied by the selected number of calendar days. Additional charges and deposits are confirmed separately.</p>
+          </details>
+          <details>
+            <summary>Can I pay online?</summary>
+            <p>Not yet. Checkout currently prepares a WhatsApp order request. Online payment integration will be added with the backend.</p>
+          </details>
+          <details>
+            <summary>Do you offer delivery and returns?</summary>
+            <p>Delivery arrangements, purchase returns and hire return conditions must be confirmed with the shop before your order is accepted.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+
+
+
+
+  
+
+
+<!-- =========================================
+     HOMEPAGE FOOTER
+========================================= -->
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div>
+        <span>✿ FASHION • BEAUTY • CREATIVITY ✿</span>
+
+        <h2>Where Every Moment Blooms.</h2>
+      </div>
+
+      <a href="contact.html">
+        Let's Connect ✿
+      </a>
+
+    </div>
+
+    <div class="footer-navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="designer-shop.html">Designer Shop</a>
+
+      <a href="makeup-studio.html">Makeup Studio</a>
+
+      <a href="photo-studio.html">Photo Studio</a>
+
+      <a href="nails-bar.html">Nails Bar</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="footer-brand">
+      Dorah Jimmyz
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span>
+        Dorah Jimmyz Collection
+      </span>
+
+      <span>
+        Made with elegance &amp; love ✿
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FLOATING SHOPPING CART -->
+<button
+  id="floatingCartButton"
+  class="floating-cart"
+  type="button"
+  aria-label="Open shopping cart"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M6 7h12l1 13H5L6 7Z"/>
+    <path d="M9 9V6a3 3 0 0 1 6 0v3"/>
+  </svg>
+
+  <span id="floatingCartCount" class="floating-cart-count">0</span>
+</button>
+
+
+
+
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <!-- SHOPPING CART -->
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping bag" aria-hidden="true" tabindex="-1">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">/ YOUR SELECTION /</span>
+        <h2>Shopping Bag.</h2>
+      </div>
+      <button class="close-button" data-close aria-label="Close shopping bag">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="drawer-footer">
+      <div class="total-row">
+        <span>Estimated subtotal</span>
+        <strong id="cartTotal">UGX 0</strong>
+      </div>
+      <p class="small-note">Delivery, deposits and additional charges are not included.</p>
+      <button class="luxury-button dark-button full-width" id="checkoutButton">PROCEED TO CHECKOUT <span>✿</span></button>
+      <button class="luxury-button plain-button full-width" data-close>CONTINUE SHOPPING</button>
+    </div>
+  </aside>
+
+  <!-- PRODUCT DETAILS -->
+  <div class="shop-modal" id="productModal" role="dialog" aria-modal="true" aria-label="Product details" aria-hidden="true" tabindex="-1">
+    <button class="close-button modal-close" data-close aria-label="Close product details">×</button>
+    <div id="productDetails"></div>
+  </div>
+
+  <!-- CHECKOUT -->
+  <div class="shop-modal checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Checkout" aria-hidden="true" tabindex="-1">
+    <button class="close-button modal-close" data-close aria-label="Close checkout">×</button>
+
+    <div class="checkout-inner">
+      <span class="eyebrow">/ YOUR ORDER REQUEST /</span>
+      <h2>Checkout.</h2>
+
+      <div class="checkout-layout">
+        <form id="checkoutForm">
+          <h3>Contact Details</h3>
+
+          <label>Full Name *
+            <input name="name" autocomplete="name" required>
+          </label>
+
+          <label>Phone Number *
+            <input name="phone" type="tel" autocomplete="tel" required>
+          </label>
+
+          <label>Email Address
+            <input name="email" type="email" autocomplete="email">
+          </label>
+
+          <h3>Delivery &amp; Payment</h3>
+
+          <label>Fulfilment Method *
+            <select name="fulfilment" id="fulfilmentMethod" required>
+              <option value="Pickup">Store pickup</option>
+              <option value="Delivery">Delivery — fee to be confirmed</option>
+            </select>
+          </label>
+
+          <div id="deliveryAddress" hidden>
+            <label>Delivery Address *
+              <textarea name="address" rows="2" placeholder="Area, street, landmark"></textarea>
+            </label>
+          </div>
+
+          <label>Preferred Payment Method
+            <select name="payment">
+              <option>Mobile Money — arrange with shop</option>
+              <option>Cash on pickup — subject to approval</option>
+              <option>Bank transfer — arrange with shop</option>
+            </select>
+          </label>
+
+          <label>Order Notes
+            <textarea name="notes" rows="3" placeholder="Special requests, delivery instructions..."></textarea>
+          </label>
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="agree" required>
+            I understand this is an enquiry, not a confirmed or paid order. *
+          </label>
+
+          <button type="submit" class="luxury-button dark-button full-width">
+            SEND ORDER VIA WHATSAPP <span>✿</span>
+          </button>
+
+          <p class="checkout-status" id="checkoutStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="order-summary">
+          <h3>Your Order</h3>
+          <div id="orderSummaryItems"></div>
+          <div class="total-row">
+            <span>Estimated subtotal</span>
+            <strong id="checkoutTotal">UGX 0</strong>
+          </div>
+          <p class="small-note">Stock, hire availability, delivery, deposits and payment arrangements will be confirmed by our team. No payment is collected on this website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
